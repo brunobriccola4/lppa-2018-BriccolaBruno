@@ -5,6 +5,7 @@ html, body{
 .game{
 	display: flex;
 	align-items: center;
+	justify-content: center;0
 	width: 100vw;
 	height: 100vh;
 }
@@ -14,8 +15,8 @@ display: flex;
 flex-wrap: wrap;
 background-color: #ccc;
 border: 2px solid #999;
-width: 108px;
-height: 108px;
+width: 180px;
+height: 180px;
 }
 
 .board li{

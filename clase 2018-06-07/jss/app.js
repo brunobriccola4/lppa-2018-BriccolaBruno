@@ -1,14 +1,21 @@
 console.log("ppr");
 
-var Play = function() {
-	var cells = Board.getCells();
-	Board.updateCells(cells)
+var Play = function () {
+	var liAlives = Board.getCells();
+	Board.updateCells(liAlives)
 }
 
-window.onload = function(){
+var init = function () {
 
 	Board.createCells();
-	var btnPlay = Board.getPlayButton();
-	btnPlay.onclick = play;
+	var cells = Board.getCells();
+	for (var i = 0; i < cells.length; i++){
+		cells[i].onclick = Cell.toggle;
+	}
+	//var btnPlay = Board.getPlayButton();
+	//btnPlay.onclick = play;
 }
+
+window.onload = init; 
+
 
