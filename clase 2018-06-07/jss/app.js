@@ -7,11 +7,8 @@ var Play = function () {
 
 var init = function () {
 
-	Board.createCells();
-	var cells = Board.getCells();
-	for (var i = 0; i < cells.length; i++){
-		cells[i].onclick = Cell.toggle;
-	}
+	Game.init();
+	Game.start();
 	//var btnPlay = Board.getPlayButton();
 	//btnPlay.onclick = play;
 }
